@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Bulls & Cows Game</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <h1>Bulls & Cows Game</h1>
+    <p>Я загадав число з 4-х різних цифр. Спробуй вгадати його, користуючись підказками: бик - цифра вірна і на вірній позиції; корова - цифра вірна, але позиція хибна. Удачі!</p>
+    <input
+      type="number"
+      id="guess"
+      placeholder="Введи 4-значне число">
+    <button type="button" id="button">Спроба</button>
+    <p id="result">Попередні спроби:<br></p>
   </body>
+
+  <script src="scripts/main.js"></script>
 </html>
