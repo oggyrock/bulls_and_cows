@@ -11,9 +11,11 @@
     <h1>Bulls & Cows Game</h1>
     <p>Я загадав число з 4-х різних цифр. Спробуй вгадати його, користуючись підказками: бик - цифра вірна і на вірній позиції; корова - цифра вірна, але позиція хибна. Удачі!</p>
     <input
-      type="number"
+      type="text"
+      maxlength="4"
       id="guess"
-      placeholder="Введи 4-значне число">
+      size="10"
+      placeholder="Введи число">
     <button type="button" id="button">Спроба</button>
     <p id="result">Попередні спроби:<br></p>
   </body>

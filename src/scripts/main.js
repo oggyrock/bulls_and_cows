@@ -49,12 +49,17 @@ const getHint = function() {
 let count = 0;
 
 document.getElementById('button').onclick = function() {
-  count++;
+  if (guess) {
+    count++;
 
-  document.getElementById('result').insertAdjacentHTML(
-    'beforeend',
-    `<p>Спроба №${count}: введено ${guess}, ${getHint(secret, guess)}</p>`
-  );
+    document.getElementById('result').insertAdjacentHTML(
+      'beforeend',
+      `<p>Спроба №${count}: введено ${guess}, ${getHint(secret, guess)}</p>`
+    );
+  } else {
+    // eslint-disable-next-line no-undef
+    alert('Потрібно ввести число');
+  }
 
   if (guess === secret) {
     document.getElementById('result').insertAdjacentHTML(
